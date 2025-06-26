@@ -37,6 +37,7 @@ class PostController extends Controller
      */
     public function store(CreatePostRequest $request)
     {
+
         $this->service->create($request->validated());
         return redirect()->route('posts.index')->with('message', 'Post Creado Exitosamente');
     }

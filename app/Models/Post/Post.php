@@ -9,8 +9,11 @@ class Post extends Model
     protected $fillable =[
         'title',
         'content',
-        'status'
+        'status',
+        'file_path',
+        'file_type',
+        'file_name'
     ];
 
-    public const PAGINATE = 10;
+    public const PAGINATE = 5;
 }

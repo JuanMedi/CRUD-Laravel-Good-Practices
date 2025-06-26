@@ -25,6 +25,7 @@ class CreatePostRequest extends FormRequest
             'title' => 'required|string|max:255',
             'content' => 'required|string',
             'status' => 'required',
+            'file' => 'nullable|file|max:10240',
         ];
     }
 }
